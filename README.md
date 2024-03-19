@@ -17,3 +17,7 @@ semanticId=urn:aas-connect:qfr:[type]:[revision]
 |                               | Cardinality of AAS submodel elements used in Submodel Templates (SMT). Cardinality (or multiplicity) defining the lower and upper bound of the number of associated elements to the submodel element that is above in the hierarchy. "ZeroToOne" means optional. "One" means exactly one submodel element is associated. "OneToMany" means at least one submodel element is associated. "ZeroToMany" denotes no or an arbitrary number of submodel elements is associated.
 |                               | urn:aas-connect:qfr:smt-cardinality/0 |
 |                               | https://admin-shell.io/SubmodelTemplates/Cardinality/1/0 |   
+| life cycle qual *active*      | ConceptQualifier - xs:string - "BUILT", "INQ", "OFF", "OP", "SPEC", "SUP", "CON", "DECOM", "OTHERS"      
+|                               | Qualifier that specifies a product lifecycle stage or phase in which the assigned value is applicable.
+|                               | urn:aas-connect:qfr:life-cycle/0 |
+|                               | 0112/2///61360_7#CBA004 | 
