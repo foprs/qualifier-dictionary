@@ -11,11 +11,9 @@ The format of the semanticId for the Qualifier is:
 semanticId=urn:aas-connect:qfr:[type]:[revision]  
 
 
-| assetClassName (status)     | assetClassId / description                                                  | 
-| --------------------------- | --------------------------------------------------------------------------- | 
-| workStation *active*        | urn:aas-connect:assetclass:workstation:1:0:bffba008-3087-4eee-881a-d6000031f7be     |
-|                             |single work station that is fully automated or where manual work is been done by one or more employees    
-| serviceRequest *active*     | urn:aas-connect:assetclass:servicerequest:1:0:bffba008-3087-4eee-881a-d6000031f7be  |
-|                             |request to perform a service task on an asset    
-| material *active*           | urn:aas-connect:assetclass:material:1:0:bffba008-3087-4eee-881a-d6000031f7be  |
-|                             |material, component or part that is part of a physical product that can be sold 
+| type (status)                 | kind - valueType - value(s) or valueId / description / semanticId / isCaseOf                           | 
+| ----------------------------- | ------------------------------------------------------------------------------------------------------ | 
+| SMT/Cardinality *active*      | TemplateQualifier - xs:string - "ZeroToOne", "One", "OneToMany", "ZeroToMany"      
+|                               | Cardinality of AAS submodel elements used in Submodel Templates (SMT). Cardinality (or multiplicity) defining the lower and upper bound of the number of associated elements to the submodel element that is above in the hierarchy. "ZeroToOne" means optional. "One" means exactly one submodel element is associated. "OneToMany" means at least one submodel element is associated. "ZeroToMany" denotes no or an arbitrary number of submodel elements is associated.
+|                               | urn:aas-connect:qfr:smt-cardinality/0 |
+|                               | https://admin-shell.io/SubmodelTemplates/Cardinality/1/0 |   
